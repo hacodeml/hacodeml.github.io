@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/hacodeml/hacodeml.github.io/issues"
   },
-  "homepage": "https://github.com/hacodeml/hacodeml.github.io/docs/index.html",
+  "homepage": "https://github.com/hacodeml/hacodeml.github.io",
   "devDependencies": {
     "css-loader": "^3.0.0",
     "node-sass": "^4.12.0",

@@ -24,12 +24,12 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Home page',
-            template: path.resolve(__dirname, '../src/assets/portfolio/index.html'),
+            template: path.resolve(__dirname, '../index.html'),
             filename: '../dist/index.html'
         }),
         new HtmlWebpackPlugin({
             title: 'Blog page',
-            template: path.resolve(__dirname, '../src/assets/portfolio/blog.html'),
+            template: path.resolve(__dirname, '../blog.html'),
             filename: '../dist/blog.html'
         }),
         new webpack.HotModuleReplacementPlugin()
