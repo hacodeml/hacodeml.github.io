@@ -32,20 +32,26 @@
   &__username {
     font-size: $font-size-h5;
     font-weight: $font-bold;
-
+   
     span {
+      display: block;
       font-size: $font-size-h3;
     }
 
     a {
+      display: inline-block;
+
       &:hover {
         transition: color 0.5s ease;
         color: $color-scale2 !important;
       }
+
     }
+
   }
 
   &__userbio {
+    display: block;
     font-size: $font-size-h2;
     font-family: $font-questrial;
     width: 100%;

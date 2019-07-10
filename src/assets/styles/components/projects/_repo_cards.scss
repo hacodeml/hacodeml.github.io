@@ -35,6 +35,9 @@
       margin: 2vh 0px;
       font-weight: $font-bold;
       word-wrap: break-word;
+      span {
+        display: block;
+      }
     }
 
     &__bottom {
@@ -48,6 +51,9 @@
 
         i {
           font-size: $font-size-icons-card;
+          &.fa-code {
+            display: inline-block;
+          }
         }
       }
     }
