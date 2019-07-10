@@ -1,0 +1,35 @@
+{
+  "name": "dist",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "start": "webpack --config config/webpack.dev.js",
+    "dev": "webpack-dev-server --open --config config/webpack.dev.js --content-base=dist",
+    "prod": "webpack --config ./config/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacodeml/hacodeml.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hacodeml/hacodeml.github.io/issues"
+  },
+  "homepage": "https://github.com/hacodeml/hacodeml.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^3.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  }
+}

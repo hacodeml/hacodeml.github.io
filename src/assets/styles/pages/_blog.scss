@@ -1,0 +1,40 @@
+@import "../components/blog/blog_main";
+
+.blog_background {
+  width: 100vw;
+  height: 55vh;
+  background: $background-image_blog;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  margin-top: -10vh;
+}
+
+@media (max-width: 800px) {
+  .blog_profile {
+    width: 90vw;
+    margin: 0px 5vw;
+    margin-top: 10vh;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .blog_arrow {
+    position: relative;
+    color: $text-color;
+    font-size: $font-size-h2;
+    margin-left: 5vw;
+    top: 5vh;
+  }
+
+  .blog {
+    img {
+      margin: 1vh 0px !important;
+    }
+
+    p {
+      margin: 2vh 0px;
+    }
+  }
+}

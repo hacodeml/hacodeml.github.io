@@ -1,0 +1,97 @@
+.profile {
+  width: 25vw;
+  padding: 4vh 2vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background: $background-image center center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  position: fixed;
+  color: #fff !important;
+
+  &__img {
+    min-height: 15vw;
+    min-width: 15vw;
+    max-height: 180px;
+    max-width: 180px;
+    padding: 20px;
+    border-radius: 15px;
+    background-size: cover !important;
+    background-image: url(https://avatars1.githubusercontent.com/u/46107517?v=4);
+  }
+
+  div {
+    font-weight: $font-bold;
+    margin: 1.5vh 0px;
+  }
+
+  &__username {
+    font-size: $font-size-h5;
+    font-weight: $font-bold;
+
+    span {
+      font-size: $font-size-h3;
+    }
+
+    a {
+      &:hover {
+        transition: color 0.5s ease;
+        color: $color-scale2 !important;
+      }
+    }
+  }
+
+  &__userbio {
+    font-size: $font-size-h2;
+    font-family: $font-questrial;
+    width: 100%;
+  }
+
+  &__about {
+    font-size: $font-size-h5;
+    font-family: $font-questrial;
+
+    span {
+      margin: 1vh 0px;
+      display: block;
+      color: $color-scale1;
+
+      a {
+        font-size: $font-size-h5;
+        color: $color-scale1;
+
+        &:hover {
+          transition: color 0.5s ease;
+          color: $color-scale0;
+        }
+      }
+
+      i {
+        font-size: $font-size-h6;
+      }
+
+      &:hover {
+        transition: color 0.5s ease;
+        color: $color-scale0;
+      }
+    }
+  }
+
+  &__about a,
+  &__username a {
+    color: $color-scale0;
+    font-weight: $font-bold;
+  }
+}
+
+@media (max-width: $mq-tablet) {
+  $background-image_new: linear-gradient(180deg, rgba(10, 10, 10, 0.6), $color-scale4),
+    url("https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=500&h=1000&q=80&fit=crop");
+  .profile {
+    background: $background-image_new center center;
+  }
+}

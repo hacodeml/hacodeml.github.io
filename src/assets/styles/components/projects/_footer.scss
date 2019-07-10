@@ -1,0 +1,19 @@
+.main-portfolio__footer {
+    width: 100%;
+    padding: 8vh 0px;
+    text-align: center;
+    font-weight: $font-bold;
+    font-size: $font-size-little;
+
+    a {
+      color: $text-color;
+      font-family: $font-questrial;
+      font-weight: $font-bold;
+      font-size: $font-size-h5;
+
+      &:hover {
+        transition: color 0.5s ease;
+        color: $color-scale2 !important;
+      }
+    }
+  }

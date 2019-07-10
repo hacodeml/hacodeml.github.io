@@ -1,0 +1,54 @@
+.main-portfolio__blog {
+  margin: 2vh 0px;
+  padding: 2vh 0px !important;
+}
+
+.blogs-cards {
+  columns: 2;
+
+  &__card {
+    width: 85%;
+    display: inline-block;
+    border-radius: 5px;
+    color: $text-color;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.4s ease-in-out;
+    transform: scale(1);
+    padding: 0px;
+    margin: 2vh 0px;
+    background: rgb(20, 20, 20);
+
+    &__img {
+      width: 100%;
+      border-radius: 5px 5px 0px 0px;
+    }
+
+    &__content {
+      padding: 2.5vh 5%;
+
+      &__title {
+        font-size: $font-size-h3;
+        font-weight: $font-bold;
+        margin: 1vh 0px;
+        padding: 0px 1px;
+        word-wrap: break-word;
+      }
+
+      &__about {
+        font-size: $font-size-h5;
+        font-family: $font-questrial;
+        margin: 2vh 0px;
+        font-weight: $font-bold;
+        word-wrap: break-word;
+      }
+    }
+    
+    &:hover {
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 0, 0);
+      box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.06);
+      transform: scale(1.03);
+    }
+  }
+}

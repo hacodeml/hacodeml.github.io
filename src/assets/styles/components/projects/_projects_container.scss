@@ -1,0 +1,54 @@
+@import "./work";
+@import "./forks";
+@import "./repo_cards";
+@import "./blog_cards";
+@import "./footer";
+
+.main-portfolio {
+  padding: 4vh 3vw;
+  height: auto;
+  display: inline-block;
+  padding-left: 33vw;
+
+  h1 {
+    font-size: $font-size-title;
+    color: $text-color;
+    font-weight: $font-bold;
+    font-family: $font-questrial;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-portfolio {
+    width: 100vw;
+    padding: 4vh 5vw;
+    height: auto;
+    display: inline-block;
+    padding-left: 5vw;
+
+    &__work {
+      margin: 0px;
+    }
+
+    &__blog {
+      margin: 0px;
+    }
+  }
+
+  .repo-cards {
+    columns: 1;
+
+    &__card {
+      width: 88%;
+    }
+  }
+
+  .blogs-cards {
+    columns: 1;
+    
+    &__card {
+      width: 88%;
+    }
+  }
+
+}

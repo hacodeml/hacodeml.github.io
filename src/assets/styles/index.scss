@@ -1,0 +1,10 @@
+@import "./core/main";
+@import "./pages/landing";
+@import "./pages/blog";
+@import "./components/loader";
+@import "./components/scroll_bar";
+
+::selection {
+  color: $bg-color;
+  background: $text-color;
+}

@@ -1,0 +1,40 @@
+.blog_post {
+  &__subtitle {
+    color: $color-scale1;
+  }
+
+  p {
+    font-size: $font-size-h6;
+    line-height: 25px;
+    word-spacing: 1.2px;
+    margin: 5vh 0px;
+    text-align: justify;
+    color: $color-scale1;
+
+    span {
+      padding: 2px 4px;
+      background: $text-color;
+      color: $bg-color !important;
+    }
+
+    a {
+      color: $text-color;
+      font-family: $font-questrial;
+      font-weight: $font-bold;
+      font-size: $font-size-h6;
+
+      &:hover {
+        transition: color 0.5s ease;
+        color: $color-scale2 !important;
+      }
+    }
+  }
+
+  p,
+  img {
+    width: 100%;
+    margin: 2vh 0px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+}

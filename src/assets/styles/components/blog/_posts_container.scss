@@ -1,0 +1,30 @@
+.blog_posts {
+  padding: 1vh 0px;
+  font-family: $font-questrial;
+  width: 60vw;
+  margin: 0px 20vw;
+  text-align: left;
+  margin-top: 3vh;
+  z-index: 1;
+
+  &__title {
+    font-size: $font-size-title;
+    color: $text-color;
+    font-weight: $font-bold;
+    font-family: $font-questrial;
+  }
+
+  &__subtitle {
+    color: $color-scale1;
+  }
+}
+
+@media (max-width: 800px) {
+  .blog_posts {
+    width: 90vw;
+    margin: 0px 5vw;
+    text-align: left;
+    margin-top: 0vh;
+    z-index: 1;
+  }
+}

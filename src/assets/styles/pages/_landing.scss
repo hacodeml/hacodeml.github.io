@@ -1,0 +1,17 @@
+@import '../components/projects/projects_container';
+@import '../components/nav_aside';
+
+@media (max-width: 800px) {
+  .profile {
+    width: 100vw;
+    padding: 4vh 5vw;
+    height: auto;
+    text-align: center;
+    position: relative;
+
+    &__img {
+      padding: 60px;
+      margin: 0px auto !important;
+    }
+  }
+}

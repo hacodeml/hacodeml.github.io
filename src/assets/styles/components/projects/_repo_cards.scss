@@ -1,0 +1,55 @@
+.repo-cards {
+  columns: 2;
+
+  &__card {
+    width: 85%;
+    padding: 2.5vh 5%;
+    display: inline-block;
+    border-radius: 5px;
+    color: $color-scale0;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.4s ease-in-out;
+    margin: 2vh 0px;
+    transform: scale(1);
+    background: rgb(20, 20, 20);
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid rgba(0, 0, 0, 0);
+      box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.06);
+      transform: scale(1.03);
+    }
+
+    &__title {
+      font-size: $font-size-h3;
+      font-weight: $font-bold;
+      margin: 1vh 0px;
+      padding: 0px 1px;
+      word-wrap: break-word;
+    }
+
+    &__about {
+      font-size: $font-size-h5;
+      font-family: $font-questrial;
+      margin: 2vh 0px;
+      font-weight: $font-bold;
+      word-wrap: break-word;
+    }
+
+    &__bottom {
+      margin: 1vh 0px;
+      font-size: $font-size-normal;
+      word-wrap: break-word;
+
+      span {
+        margin-right: 20px;
+        font-weight: $font-bold;
+
+        i {
+          font-size: $font-size-icons-card;
+        }
+      }
+    }
+  }
+}
